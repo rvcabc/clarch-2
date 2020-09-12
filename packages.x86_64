@@ -9,6 +9,7 @@ autoconf
 automake
 b43-fwcutter
 base
+base-devel
 bind-tools
 binutils
 bison
@@ -48,11 +49,10 @@ iwd
 jfsutils
 kitty-terminfo
 lftp
-lightdm
-lightdm-gtk-greeter
 linux
 linux-atm
 linux-firmware
+lxdm
 lsscsi
 lvm2
 lynx
@@ -96,6 +96,7 @@ syslinux
 systemd-resolvconf
 tcpdump
 terminus-font
+termite
 termite-terminfo
 testdisk
 usb_modeswitch
@@ -106,6 +107,7 @@ wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
+xdg-user-dirs
 xfsprogs
 xl2tpd
 zsh
