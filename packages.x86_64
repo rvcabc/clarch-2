@@ -32,8 +32,10 @@ efibootmgr
 ethtool
 exfatprogs
 f2fs-tools
+file-roller
 firefox
 fsarchiver
+git
 gnu-netcat
 gpm
 gptfdisk
@@ -45,11 +47,11 @@ intel-ucode
 ipw2100-fw
 ipw2200-fw
 irssi
-iwd
 jfsutils
 kitty-terminfo
 lftp
-linux
+linux-hardened
+linux-hardened-headers
 linux-atm
 linux-firmware
 lxdm
@@ -91,6 +93,7 @@ rxvt-unicode-terminfo
 sdparm
 sg3_utils
 smartmontools
+sublime-text
 sudo
 syslinux
 systemd-resolvconf
@@ -103,9 +106,6 @@ usb_modeswitch
 usbutils
 vim
 vpnc
-wireless-regdb
-wireless_tools
-wpa_supplicant
 wvdial
 xdg-user-dirs
 xfsprogs
