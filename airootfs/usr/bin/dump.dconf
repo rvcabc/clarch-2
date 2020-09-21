@@ -1,4 +1,22 @@
 [org/cinnamon]
+desktop-effects-close-effect='traditional'
+desktop-effects-close-time=120
+desktop-effects-close-transition='easeOutQuad'
+desktop-effects-map-effect='traditional'
+desktop-effects-map-time=100
+desktop-effects-map-transition='easeOutQuad'
+desktop-effects-maximize-effect='none'
+desktop-effects-maximize-time=100
+desktop-effects-maximize-transition='easeInExpo'
+desktop-effects-minimize-effect='traditional'
+desktop-effects-minimize-time=160
+desktop-effects-minimize-transition='easeInQuad'
+desktop-effects-tile-effect='none'
+desktop-effects-tile-time=100
+desktop-effects-tile-transition='easeInQuad'
+desktop-effects-unmaximize-effect='none'
+desktop-effects-unmaximize-time=100
+desktop-effects-unmaximize-transition='easeNone'
 enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:show-desktop@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:1:systray@cinnamon.org:3', 'panel1:right:2:xapp-status@cinnamon.org:4', 'panel1:right:3:notifications@cinnamon.org:5', 'panel1:right:4:printers@cinnamon.org:6', 'panel1:right:5:removable-drives@cinnamon.org:7', 'panel1:right:6:keyboard@cinnamon.org:8', 'panel1:right:7:network@cinnamon.org:9', 'panel1:right:8:sound@cinnamon.org:10', 'panel1:right:9:power@cinnamon.org:11', 'panel1:right:10:calendar@cinnamon.org:12']
 next-applet-id=14
 panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
@@ -14,6 +32,12 @@ dwell-threshold=10
 dwell-time=1.2
 secondary-click-enabled=false
 secondary-click-time=1.2
+
+[org/cinnamon/desktop/applications/calculator]
+exec='galculator'
+
+[org/cinnamon/desktop/applications/terminal]
+exec='lxterminal'
 
 [org/cinnamon/desktop/background]
 picture-options='stretched'
@@ -33,15 +57,18 @@ scaling-factor=uint32 0
 toolkit-accessibility=false
 
 [org/cinnamon/desktop/keybindings]
-custom-list=['__dummy__', 'custom0']
+custom-list=['custom0', '__dummy__']
 
 [org/cinnamon/desktop/keybindings/custom-keybindings/custom0]
 binding=['<Primary><Alt>t']
-command='/bin/termite'
+command='/usr/bin/lxterminal'
 name='Launch terminal'
 
 [org/cinnamon/desktop/keybindings/media-keys]
 terminal=@as []
+
+[org/cinnamon/desktop/media-handling]
+autorun-never=false
 
 [org/cinnamon/desktop/sound]
 event-sounds=false
@@ -53,7 +80,7 @@ workspace-names=@as []
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 delay=uint32 500
-numlock-state='on'
+numlock-state='off'
 repeat-interval=uint32 30
 
 [org/cinnamon/settings-daemon/peripherals/touchpad]
@@ -81,12 +108,12 @@ secondary-click-time=1.2
 toolkit-accessibility=false
 
 [org/gnome/gedit/plugins]
-active-plugins=['spell', 'filebrowser', 'docinfo', 'time', 'modelines']
+active-plugins=['time', 'spell', 'docinfo', 'modelines', 'filebrowser']
 
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/bryce/lxdm-themes'
+virtual-root='file:///tmp'
 
 [org/gnome/gedit/preferences/ui]
 show-tabs-mode='auto'
@@ -97,6 +124,14 @@ side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(906, 697)
 state=87168
+
+[org/gnome/nm-applet/eap/143f6a9f-daf3-490b-a489-3370a57a907f]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/1a1df864-444d-4f55-ac1d-2b47d94d36d4]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/26e90953-1108-4892-928a-e420912da699]
 ignore-ca-cert=false
@@ -117,7 +152,7 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(188, 7)
+window-position=(188, 14)
 window-size=(990, 702)
 
 [org/nemo/preferences]
@@ -125,6 +160,8 @@ show-hidden-files=false
 show-location-entry=true
 
 [org/nemo/window-state]
-my-computer-expanded=false
+geometry='800x550+273+89'
+maximized=false
+my-computer-expanded=true
 sidebar-bookmark-breakpoint=0
 start-with-sidebar=true
