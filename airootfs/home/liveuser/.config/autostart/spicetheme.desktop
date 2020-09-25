@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Spice Theme
-Exec=/usr/bin/spicetheme
+Exec=spicetheme
 Icon=utilities-terminal
 Type=Application
 Categories=System;Utility;

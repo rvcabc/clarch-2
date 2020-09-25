@@ -56,8 +56,6 @@ linux-hardened
 linux-hardened-headers
 linux-atm
 linux-firmware
-lightdm
-lightdm-gtk-greeter
 lsscsi
 lvm2
 lynx
@@ -119,4 +117,10 @@ xdg-user-dirs
 xfsprogs
 xorg
 xorg-server
+xorg-xinit
 xl2tpd
+
+
+#Custom Repo
+nodejs
+npm

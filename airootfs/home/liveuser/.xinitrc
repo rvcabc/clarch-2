@@ -1,0 +1,5 @@
+#
+#
+#
+#xcreensaver &
+#exec cinnamon

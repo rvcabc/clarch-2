@@ -1,9 +1,17 @@
 #
-# ~/.bashrc
+#~/.bashrc
 #
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+exec startx
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+neofetch
+
+alias l='ls -lh'
+alias ll='ls -lha'
+
+#archiso shortcuts
+alias rw='sudo rm -r /home/bryce/clarch-2/work/'
+alias ro='sudo rm -r /home/bryce/clarch-2/out/'
+alias nb='sudo ./build.sh -v'
+
